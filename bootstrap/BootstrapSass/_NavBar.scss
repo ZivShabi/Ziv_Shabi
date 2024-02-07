@@ -1,0 +1,32 @@
+.NavBar {
+    width: 80vw;
+    height: 4vw;
+    font-family: 'Rubik Broken Fax', system-ui;
+    text-align: center;
+    font-size: 1.5rem;
+    position: fixed;
+    color: #8f964b;
+    display: flex;
+}
+
+.ZivShabi {
+    width: 5vw;
+    height: 4vw;
+    border-radius: 100px;
+    margin-left: 6.3vw;
+}
+
+.PageNavBar_a {
+    background-color: #f6f9fa;
+    color: #64c6e6;
+    width: 8vw;
+}
+
+.text a1 {
+    width: 5vw;
+    font-size: 1.3rem;
+}
+
+.container-fluid>button {
+    width: 80vw;
+}

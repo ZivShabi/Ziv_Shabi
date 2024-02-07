@@ -1,0 +1,125 @@
+.ContainerNav {
+    width: 80%;
+    height: 80px;
+    max-width: 1200px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    background-color: darkcyan;
+    box-shadow: 1vw 1vw 2.5vw white;
+    border-bottom: 0.2vw solid white;
+    border-top: 0.2vw solid white;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5;
+}
+
+a:hover {
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+.ContainerNav .logo a .AttributeSelector {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.ContainerNav .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.ContainerNav .toggle_btn {
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: black;
+    color: darkcyan;
+    border: 1px;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8;
+    font-weight: bold;
+    cursor: scale 0.2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    background-color: white;
+    color: black;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+.DropdownMenu {
+    display: none;
+    width: 300px;
+    height: 0;
+    background: white;
+    backdrop-filter: blur (15px);
+    position: absolute;
+    right: 3rem;
+    top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.DropdownMenu.open {
+    height: 240px;
+}
+
+.DropdownMenu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.DropdownMenu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.AttributeSelector {
+    font-size: 1.5rem;
+    font-family: 'Rubik Distressed', system-ui;
+}
+
+
+.AttributeSelector a[title="ראשי"] {
+    color: rgb(0, 42, 126);
+}
+
+.AttributeSelector a[title~="אודות"] {
+    color: black;
+}
+
+.AttributeSelector a[title*="שיר"] {
+    color: black;
+}
+
+.AttributeSelector a[title*="צו"] {
+    color: black;
+}

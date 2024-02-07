@@ -1,0 +1,132 @@
+   #SectionCard {
+       margin: auto;
+       width: 80vw;
+   }
+
+   .ContainerCard {
+       background-color: rgb(248, 248, 245);
+       box-shadow: 0.5vw 0.5vw 1vw rgb(248, 248, 245);
+       display: flex;
+       justify-content: center;
+       align-content: center;
+       width: 70vw;
+       margin: auto;
+       display: flex;
+       flex-wrap: wrap;
+       margin: auto;
+       font-size: 1.5rem;
+       gap: 1rem;
+       border-bottom-left-radius: 18px;
+       border-bottom-right-radius: 18px;
+   }
+
+   .card {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       align-content: center;
+       width: 250px;
+       height: 300px;
+       box-shadow: 3px 3px 12px gray;
+       margin: 1rem auto;
+       margin: 1rem;
+       border-radius: 15px;
+       text-align: center;
+   }
+
+   .card:hover {
+       scale: 1.05;
+   }
+
+   .CardButton {
+       width: 100px;
+       height: 20px;
+       background-color: darkcyan;
+       border-radius: 8px;
+       border: 1px solid black;
+   }
+
+   .card1 {
+       background-image: url(../ImgIndex/מתי\ לאחרונה\ טסתם\ לטיול\ בחול\ .png);
+       height: 40%;
+       background-position: fill;
+       background-size: cover;
+       border-radius: 15px 15px 0 0;
+   }
+
+   .card2 {
+       background-image: url(../ImgIndex/אנחנו\ מזמינים\ אותכם\ לתערוכה\ שלנו\ .png);
+       height: 40%;
+       border-radius: 15px 15px 0 0;
+       background-position: fill;
+       background-size: cover;
+   }
+
+   .card3 {
+       background-image: url(../ImgIndex/coffee.png);
+       height: 40%;
+       border-radius: 15px 15px 0 0;
+       background-position: fill;
+       background-size: cover;
+   }
+
+   .card4 {
+       background-image: url(../ImgIndex/גם\ לכם\ מגיע\ להתחדש\ בטלפון\ חדש.png);
+       height: 40%;
+       border-radius: 15px 15px 0 0;
+       background-position: fill;
+       background-size: cover;
+   }
+
+   .card5 {
+       background-image: url(../ImgIndex/עותק\ של\ מכאן\ ניתן\ להגיעה\ אלינו.png);
+       height: 40%;
+       border-radius: 15px 15px 0 0;
+       background-position: fill;
+       background-size: cover;
+   }
+
+   .card6 {
+       background-image: url(../ImgIndex/עותק\ של\ שרותי\ אחריות\ אצלנו\ הם\ לשלוש\ שנים.png);
+       height: 40%;
+       border-radius: 15px 15px 0 0;
+       background-position: fill;
+       background-size: cover;
+   }
+
+   .card7 {
+       background-image: url();
+   }
+
+   .text h3 {
+       font-size: 0.7em;
+       color: firebrick;
+   }
+
+   .text h4 {
+       line-height: 3;
+       font-size: 2rem;
+   }
+
+   .text p3 {
+       font-size: 0.5em;
+   }
+
+   .text p4 {
+       line-height: 3;
+       font-size: 1.1rem;
+   }
+
+   .SelectedWorks {
+       margin: 0 auto;
+       width: 70vw;
+       background-color: rgb(248, 248, 245);
+       box-shadow: 0.5vw 0.5vw 1vw rgb(248, 248, 245);
+   }
+
+   .ImgHtmlCss>img {
+       width: 2.8vw;
+       height: 2.8vw;
+       border-radius: 50px;
+       margin: 1em;
+   }

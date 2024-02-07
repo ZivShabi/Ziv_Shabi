@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+}
+
+img {
+    width: 100vw;
+    height: 60vh;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+article {
+    width: 100vw;
+    height: 70vh;
+    background-image: url(../img/Background_of_the_first_page.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+#form_container {
+    width: 25vw;
+    height: 60vh;
+    background-color: #1A1A1AD4;
+    margin-left: 68vw;
+    margin-top: -43vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#container-form-title {
+    direction: rtl;
+    width: 90%;
+    color: white;
+    font-size: small;
+    margin-top: 2vw;
+
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    direction: rtl;
+    margin-top: 1.8rem;
+    font-size: x-small;
+    color: white;
+}
+
+.form-control>input {
+    width: 20vw;
+    height: 2.5vw;
+}
+
+input[type=submit] {
+    width: 40%;
+    height: 2.5vw;
+    background: #D31C75;
+    font: normal normal bold 22px/30px Heebo;
+    letter-spacing: 1px;
+    color: white;
+}
+
+#container-form-title>h1 {
+    font-weight: bold;
+    font: normal normal 900 25px/50px Heebo;
+}
+
+#container-form-title>p {
+    font: normal normal 900 15px/30px Heebo;
+}
+
+@media screen and (max-width: 1400px) {
+    article {
+        width: 100vw;
+        height: 35vh;
+        background-image: url(../img/Background_of_the_first_page.png);
+        opacity: 1;
+    }
+
+    #form_container {
+        width: 80vw;
+        height: 60vh;
+        background-color: #1A1A1AD4;
+        margin: 0 auto;
+        margin-top: -17.5vh;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .form-control>input {
+        width: 80%;
+        height: 10vw;
+    }
+
+    #container-form-title {
+        direction: rtl;
+    }
+
+    .form-control {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        direction: rtl;
+        margin-top: 10vw;
+        font-size: x-small;
+    }
+
+    input[type=submit] {
+        width: 40%;
+        height: 10vw;
+        font: normal normal bold 20px/30px Heebo;
+        letter-spacing: 1px;
+    }
+
+    #container-form-title>p {
+        font: normal normal 900 20px/25px Heebo;
+    }
+
+    #container-form-title>h1 {
+        font: normal normal 900 38px/70px Heebo;
+    }
+}

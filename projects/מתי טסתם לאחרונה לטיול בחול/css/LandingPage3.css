@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 70vh;
+    background-image: url(../img/Path\ 15@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+.text h1 {
+    font: normal normal bold 60px/80px Assistant;
+    color: yellow;
+    line-height: 2;
+    margin: 2vw;
+    font-weight: bold;
+}
+
+.text p {
+    font: normal normal bold 23px/43px Assistant;
+    color: white;
+}
+
+.contaiiner_tital {
+    width: 100vw;
+    padding: 100px 100px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: self-end;
+}
+
+.container_form {
+    width: 100vw;
+    height: 35vh;
+    padding: 100px 100px;
+}
+
+#LastName {
+    border-bottom: 2px solid yellow;
+    background-color: wheat;
+}
+
+#FirstName {
+
+    border-bottom: 2px solid yellow;
+    background-color: wheat;
+}
+
+::placeholder {
+    font-style: oblique;
+}
+
+.container_label {
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    margin: 2em;
+}
+
+label {
+    font-size: small;
+}
+
+input {
+    width: 18vw;
+    height: 4vh;
+}
+
+
+input[type=submit] {
+    width: 8vw;
+    height: 4vh;
+    background-color: yellow;
+    color: black;
+    font-size: 1.2em;
+}
+
+footer {
+    width: 100vw;
+    height: 4vh;
+    background-color: black;
+    border-bottom: 5px solid rgb(22, 94, 204);
+}
+
+footer>h2 {
+    color: rgb(22, 94, 204);
+    font-size: 1.1rem;
+    padding: 5px 20px;
+}
+
+@media screen and (max-width:1400px) {
+
+    header {
+        width: 100vw;
+        height: 70vh;
+        background-image: url(../img/Path\ 15@2x.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+    }
+
+    .text h1 {
+        width: 100vw;
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-left: -100px;
+
+    }
+
+    .text p {
+        width: 100vw;
+        /* font: normal normal bold 18px/23px Assistant; */
+        font-size: 1rem;
+        margin-left: -100px;
+    }
+
+    input {
+        width: 80vw;
+        height: 6vh;
+    }
+
+    input[type=submit] {
+        width: 80vw;
+        height: 6vh;
+    }
+
+    label {
+        font-size: small;
+    }
+
+    form {
+        display: block;
+
+    }
+
+    .container_label {
+        width: 56.5vw;
+    }
+
+    .container_form {
+        width: 100;
+        height: 57vh;
+    }
+}

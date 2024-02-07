@@ -1,0 +1,227 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .container {
+     width: 100vw;
+     height: 127.5vh;
+     justify-content: center;
+     text-align: center;
+ }
+
+ header {
+     background-color: #0EE1E1;
+     width: 100vw;
+     height: 40vh;
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+ .text h2 {
+     font-size: 3rem;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: black;
+ }
+
+ .text h1 {
+     padding: 50px;
+     font-size: 3rem;
+     font-weight: bold;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: black;
+ }
+
+ .text h3 {
+     font-size: 2rem;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight: bold;
+     color: #0EE1E1;
+ }
+
+ .text h4 {
+     font-size: 3rem;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: black;
+ }
+
+ .text p {
+     padding: 30px;
+     font-size: 0.8rem;
+     font-family: Arial, Helvetica, sans-serif;
+     color: black;
+ }
+
+ img[title~="thGroup"] {
+     background-repeat: no-repeat;
+     width: 20vw;
+     height: 20vh;
+     margin-top: 50px;
+ }
+
+ img[alt~=icon] {
+     width: 4vw;
+ }
+
+ span img[alt*="ic"] {
+     padding: 10px;
+     background-color: white;
+     border-radius: 30px;
+ }
+
+ .containerItem {
+     margin-top: 30px;
+     justify-content: center;
+     text-align: center;
+     display: grid;
+     grid-template-columns: repeat(4, 300px);
+     grid-template-rows: repeat(3, 200px);
+     gap: 30px 15px;
+ }
+
+ .item {
+     background-color: #f3f0f0d2;
+ }
+
+ .item5 {
+     grid-column: 1/3;
+     grid-row: 2/4;
+     background-color: #ecfdfd;
+
+ }
+
+ .item6 {
+     grid-column: 3/5;
+     grid-row: 2/4;
+ }
+
+ form {
+     display: flex;
+     flex-direction: column;
+ }
+
+ /* .container_title {} */
+
+ .container_label {
+     display: flex;
+     flex-direction: column;
+
+ }
+
+ label {
+     font-size: 0.8rem;
+     color: black;
+ }
+
+ input[type~="submit"] {
+     background-color: #0EE1E1;
+     width: 18vw;
+     height: 4.5vh;
+     font-size: 1.2rem;
+     border: #0EE1E1;
+ }
+
+ ::placeholder {
+     font-style: oblique;
+ }
+
+ #FullName {
+     width: 18vw;
+     height: 4.5vh;
+     background-color: #E5EEFF;
+     border: #E5EEFF;
+     border-bottom: 4px solid #0EE1E1;
+ }
+
+ #Email {
+     width: 18vw;
+     height: 4.5vh;
+     border: #E5EEFF;
+     border-bottom: 4px solid #0EE1E1;
+     background-color: #E5EEFF;
+ }
+
+ #TextAreaa {
+     width: 18vw;
+     height: 14vh;
+     background-color: #E5EEFF;
+     border: #E5EEFF;
+     border-bottom: 4px solid #0EE1E1;
+ }
+
+ aside {
+     margin-left: -5.7vw;
+     width: 48.5vw;
+     height: 30vw;
+     background-color: #0EE1E1;
+ }
+
+ iframe {
+     width: 40vw;
+     height: 30vw;
+     padding: 20px 10px;
+ }
+
+ footer {
+     width: 100vw;
+     height: 20vh;
+     border-bottom: 10px solid #0EE1E1;
+ }
+
+ a {
+     padding: 20px;
+     font-size: 2rem;
+     background-color: #0EE1E1;
+     border-radius: 100px;
+ }
+
+ li {
+     display: contents;
+ }
+
+ ul {
+     /* img[title~="thGroup"] {} */
+     width: 100vw;
+     text-align: center;
+     background-color: #FFFFFF;
+     padding: 20px;
+ }
+
+
+ ul li a img {
+     padding: 18px;
+     width: 4.5vw;
+     height: 4.5vw;
+ }
+
+ @media (min-width:280px) and (max-width:650px) {
+
+     .container {
+         width: 100vw;
+         height: 150vh;
+     }
+
+     header {
+         width: 125vw;
+         height: 50vh;
+         display: inline-block;
+         /* flex-direction: row; */
+     }
+
+     .containerItem {
+         height: 100vh;
+         display: grid;
+         grid-template-columns: repeat(1, 300px);
+         grid-template-rows: repeat(6, 300px);
+         flex-wrap: wrap;
+     }
+
+     footer {
+         margin-top: 35vh;
+     }
+
+     .item6 {
+         flex-wrap: nowrap;
+     }
+ }

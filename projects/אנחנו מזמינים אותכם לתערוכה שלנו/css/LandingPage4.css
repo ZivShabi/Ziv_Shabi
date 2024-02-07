@@ -1,0 +1,218 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        background-color: #d3e2fc;
+
+    }
+
+    .container {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(4, 150px);
+        grid-template-rows: repeat(6, 150px);
+        gap: 20px;
+        justify-content: center;
+        padding: 10vw 10vw 10vw 10vw;
+
+        justify-content: center;
+        inset: 1;
+        margin: auto;
+        position: absolute;
+    }
+
+    .item {
+        padding: 15px;
+        background-color: blue;
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .img1 {
+        background-image: url(../img/Rectangle\ 506.png);
+        background-position: fill;
+        background-size: cover;
+    }
+
+    .img2 {
+        background-image: url(../img/Rectangle\ 507.png);
+        background-position: fill;
+        background-size: cover;
+    }
+
+    .img3 {
+        background-image: url(../img/Rectangle\ 508.png);
+        background-position: fill;
+        background-size: cover;
+    }
+
+    .item4 {
+        grid-column: 3/5;
+        grid-row: 1/3;
+        background-color: #020253;
+
+    }
+
+    .text h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: rgb(35, 206, 206);
+        padding: 4px;
+        margin-top: 60px;
+    }
+
+    .text p {
+        font-size: 1rem;
+        color: white;
+        padding: 4px;
+        margin-top: 15px;
+    }
+
+    .img5 {
+        background-image: url(../img/Rectangle\ 509.png);
+        background-position: fill;
+        background-size: cover;
+    }
+
+    .img6 {
+        background-image: url(../img/Rectangle\ 510.png);
+        background-position: fill;
+        background-size: cover;
+    }
+
+    .img7 {
+        background-image: url(../img/Rectangle\ 511.png);
+        background-position: fill;
+        background-size: cover;
+    }
+
+    .img8 {
+        background-image: url(../img/Rectangle\ 512.png);
+        background-position: fill;
+        background-size: cover;
+    }
+
+    .img9 {
+        background-image: url(../img/Rectangle\ 513.png);
+        background-position: fill;
+        background-size: cover;
+    }
+
+    .item10 {
+        grid-column: 1/3;
+        grid-row: 4/7;
+        background-color: #8E097C;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+        color: white;
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+    div {
+        text-align: center;
+    }
+
+    label {
+        color: #13cec4;
+        font-size: 1rem;
+        display: block;
+    }
+
+    #FullName {
+        border-bottom: 3px solid #13cec4;
+        width: 250px;
+        height: 35px;
+    }
+
+    #Email {
+        border-bottom: 3px solid #13cec4;
+        width: 250px;
+        height: 35px;
+    }
+
+    ::placeholder {
+        font-style: italic;
+    }
+
+    textarea {
+        width: 250px;
+        height: 100px;
+    }
+
+    input[type=submit] {
+        width: 250px;
+        height: 35px;
+        background-color: #13cec4;
+        font-size: 1.5rem;
+        border-radius: 8px;
+    }
+
+    .img11 {
+        background-image: url(../img/Rectangle\ 514.png);
+        background-position: fill;
+        background-size: cover;
+    }
+
+    .img12 {
+        background-image: url(../img/Rectangle\ 515.png);
+        background-position: fill;
+        background-size: cover;
+    }
+
+    .img13 {
+        background-image: url(../img/Rectangle\ 516.png);
+        background-position: fill;
+        background-size: cover;
+    }
+
+    .img14 {
+        background-image: url(../img/Rectangle\ 517.png);
+        background-position: fill;
+        background-size: cover;
+    }
+
+    .img15 {
+        background-image: url(../img/Rectangle\ 518.png);
+        background-position: fill;
+        background-size: cover;
+    }
+
+    .img16 {
+        background-image: url(../img/Rectangle\ 519.png);
+        background-position: fill;
+        background-size: cover;
+    }
+
+    @media screen and (max-width:1400px) {
+
+        .container {
+            grid-template-columns: repeat(2, 150px);
+            grid-template-rows: repeat(12, 150px);
+            gap: 30px;
+        }
+
+        .item4 {
+            grid-column: 1/3;
+            grid-row: 1/3;
+        }
+
+        .item10 {
+            grid-column: 1/3;
+            grid-row: 7/10;
+        }
+
+        img {
+            width: 39vw;
+            height: 39vw;
+            margin-top: -3.8vw;
+            margin-left: -3.8vw;
+        }
+    }
