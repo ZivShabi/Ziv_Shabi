@@ -17,12 +17,13 @@ header {
   width: 80vw;
   height: 55vh;
   margin: 0 auto;
-  margin: 0 auto;
   position: relative;
   padding: 3rem 0;
   background-color: black;
   box-shadow: 0.5vw 0.5vw 1vw black;
   border-radius: 18px;
+  display: flex;
+  flex-direction: column;
 }
 
 .ContainerTitle {
@@ -57,97 +58,62 @@ header {
   box-shadow: 1vw 1vw 2.5vw white;
   border-bottom: 0.2vw solid white;
   border-top: 0.2vw solid white;
+  justify-content: space-evenly;
 }
 
-a {
+.ZivShabi {
+  width: 30px;
+  height: 30px;
+}
+
+a,
+a:visited {
   text-decoration: none;
-  color: black;
-  font-size: 1.5;
+  color: white;
+  padding: 1em;
+  font-size: 1.5rem;
+  font-family: "Rubik Distressed", system-ui;
 }
 
 a:hover {
-  color: white;
+  color: yellow;
 }
 
-li {
-  list-style: none;
-}
-
-.ContainerNav .logo a .AttributeSelector {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.ContainerNav .links {
+nav {
   display: flex;
-  gap: 2rem;
+  justify-content: space-evenly;
+  padding: 2em;
 }
 
-.ContainerNav .toggle_btn {
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
+input[type=checkbox] {
   display: none;
 }
 
-.action_btn {
-  background-color: black;
+#MenuToggle {
+  display: none;
+}
+
+#hamburger {
+  width: 20%;
+  display: none;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  background-color: white;
   color: darkcyan;
-  border: 1px;
   padding: 0.5rem 1rem;
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  font-size: 0.8;
   font-weight: bold;
   cursor: scale 0.2 ease;
 }
 
-.action_btn:hover {
+#hamburger:hover {
   scale: 1.05;
   background-color: white;
   color: black;
 }
 
-.action_btn:active {
+#hamburger:active {
   scale: 0.95;
-}
-
-.DropdownMenu {
-  display: none;
-  width: 300px;
-  height: 0;
-  background: white;
-  -webkit-backdrop-filter: blur 15px;
-          backdrop-filter: blur 15px;
-  position: absolute;
-  right: 3rem;
-  top: 20px;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.DropdownMenu.open {
-  height: 240px;
-}
-
-.DropdownMenu li {
-  padding: 0.7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.DropdownMenu .action_btn {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.AttributeSelector {
-  font-size: 1.5rem;
-  font-family: "Rubik Distressed", system-ui;
 }
 
 .AttributeSelector a[title=ראשי] {
@@ -300,7 +266,7 @@ article {
 
 .CardButton {
   width: 100px;
-  height: 20px;
+  height: 30px;
   background-color: darkcyan;
   border-radius: 8px;
   border: 1px solid black;
@@ -347,7 +313,7 @@ article {
 }
 
 .card6 {
-  background-image: url(../ImgIndex/עותק\ של\ שרותי\ אחריות\ אצלנו\ הם\ לשלוש\ שנים.png);
+  background-image: url(../ImgIndex/עותק\ של\ שרותי\ אחריות\ אצלנו\ הם\ לשלוש\ שנים\ 2.png);
   height: 40%;
   border-radius: 15px 15px 0 0;
   background-position: fill;
@@ -355,7 +321,11 @@ article {
 }
 
 .card7 {
-  background-image: url();
+  background-image: url(../ImgIndex/לחשוב\ מחוץ\ לקופסה.png);
+  height: 40%;
+  border-radius: 15px 15px 0 0;
+  background-position: fill;
+  background-size: cover;
 }
 
 .text h3 {
@@ -397,26 +367,34 @@ article {
     width: unset;
   }
 }
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
   #container {
     width: 100vw;
   }
   .ContainerNav {
+    width: 80%;
     height: 40px;
+    display: flex;
+    flex-direction: column;
   }
-  .ContainerNav .links,
-  .ContainerNav .action_btn {
+  #navbar-links {
     display: none;
   }
-  .ContainerNav .toggle_btn {
+  #MenuToggle {
+    display: none;
+  }
+  #hamburger {
     display: block;
   }
-  .DropdownMenu {
+  .links {
+    flex-direction: column;
+  }
+  input[type=checkbox]:checked ~ .NavBarLinks {
     display: block;
   }
   header {
     width: 80vw;
-    height: 55vh;
+    height: 80vh;
   }
   .ContainerTitle {
     padding: 60px 60px;
@@ -586,12 +564,12 @@ article {
   }
   .ContainerAside {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(2, 100px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     display: flex;
     flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 80vw;
+    width: 50px;
   }
   .img_aside {
     width: 15vw;
@@ -701,8 +679,8 @@ input[type=submit] {
   width: 80vw;
   height: 20vh;
   display: grid;
-  grid-template-columns: repeat(6, 80px);
-  grid-template-rows: repeat(3, 80px);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   justify-content: space-around;
   margin: 0 auto;
   display: flex;

@@ -5,8 +5,9 @@
  }
 
  .container {
+     margin: 0 auto;
      width: 100vw;
-     height: 127.5vh;
+     height: 130vh;
      justify-content: center;
      text-align: center;
  }
@@ -76,7 +77,7 @@
      text-align: center;
      display: grid;
      grid-template-columns: repeat(4, 300px);
-     grid-template-rows: repeat(3, 200px);
+     grid-template-rows: repeat(6, 200px);
      gap: 30px 15px;
  }
 
@@ -109,6 +110,10 @@
 
  }
 
+ .container_label input {
+     margin-left: 150px;
+ }
+
  label {
      font-size: 0.8rem;
      color: black;
@@ -116,10 +121,11 @@
 
  input[type~="submit"] {
      background-color: #0EE1E1;
-     width: 18vw;
-     height: 4.5vh;
+     width: 300px;
+     height: 30px;
      font-size: 1.2rem;
      border: #0EE1E1;
+     margin-left: 150px;
  }
 
  ::placeholder {
@@ -127,24 +133,30 @@
  }
 
  #FullName {
-     width: 18vw;
-     height: 4.5vh;
+     text-align: right;
+     width: 300px;
+     height: 30px;
      background-color: #E5EEFF;
      border: #E5EEFF;
      border-bottom: 4px solid #0EE1E1;
  }
 
  #Email {
-     width: 18vw;
-     height: 4.5vh;
+     text-align: right;
+     width: 300px;
+     height: 30px;
      border: #E5EEFF;
      border-bottom: 4px solid #0EE1E1;
      background-color: #E5EEFF;
  }
 
+ .container_label #TextAreaa {
+     margin-left: 150px;
+ }
+
  #TextAreaa {
-     width: 18vw;
-     height: 14vh;
+     width: 300px;
+     height: 100px;
      background-color: #E5EEFF;
      border: #E5EEFF;
      border-bottom: 4px solid #0EE1E1;
@@ -158,41 +170,33 @@
  }
 
  iframe {
-     width: 40vw;
-     height: 30vw;
+     width: 300px;
+     height: 300px;
      padding: 20px 10px;
  }
 
  footer {
      width: 100vw;
-     height: 20vh;
+     height: 10vh;
      border-bottom: 10px solid #0EE1E1;
  }
+
+
+ footer>img {
+     width: 50px;
+     height: 50px;
+     padding: 10px;
+     margin-left: 100px;
+     border-radius: 100%;
+     background-color: #0EE1E1;
+ }
+
 
  a {
      padding: 20px;
      font-size: 2rem;
      background-color: #0EE1E1;
      border-radius: 100px;
- }
-
- li {
-     display: contents;
- }
-
- ul {
-     /* img[title~="thGroup"] {} */
-     width: 100vw;
-     text-align: center;
-     background-color: #FFFFFF;
-     padding: 20px;
- }
-
-
- ul li a img {
-     padding: 18px;
-     width: 4.5vw;
-     height: 4.5vw;
  }
 
  @media (min-width:280px) and (max-width:650px) {
@@ -209,19 +213,83 @@
          /* flex-direction: row; */
      }
 
+     header>span>img[src="../img/Icon awesome-whatsapp.png"] {
+         display: none;
+     }
+
      .containerItem {
-         height: 100vh;
+         width: 1px;
          display: grid;
-         grid-template-columns: repeat(1, 300px);
-         grid-template-rows: repeat(6, 300px);
+         grid-template-columns: repeat(1, fr1);
+         grid-template-rows: repeat(5, fr1);
          flex-wrap: wrap;
      }
 
+     .item1 {
+         grid-column: -2/-3;
+         grid-row: -5/-6;
+     }
+
+     .item2 {
+         grid-column: -2/-3;
+         grid-row: -7/-8;
+     }
+
+     .item3 {
+         grid-column: -2/-3;
+         grid-row: -6/-7;
+     }
+
+     .item5 {
+         grid-column: -2/-3;
+         grid-row: -2/-5;
+     }
+
+     .item6 {
+         grid-column: -2/-3;
+         grid-row: -2/-3;
+         background-color: #ecfdfd;
+     }
+
      footer {
-         margin-top: 35vh;
+         display: flex;
+         position: relative;
+         margin: 60em 0em;
      }
 
      .item6 {
          flex-wrap: nowrap;
+     }
+
+     label {
+         font-size: 0.8rem;
+         color: black;
+         text-align: right;
+     }
+
+     .container_label input {
+         margin-left: 10px;
+     }
+
+     .container_label #TextAreaa {
+         margin-left: 10px;
+     }
+
+     input[type~="submit"] {
+         background-color: #0EE1E1;
+         width: 300px;
+         height: 30px;
+         font-size: 1.2rem;
+         border: #0EE1E1;
+         margin-left: 10px;
+     }
+
+     footer>img {
+         width: 50px;
+         height: 50px;
+         padding: 10px;
+         margin-left: 15px;
+         border-radius: 100%;
+         background-color: #0EE1E1;
      }
  }

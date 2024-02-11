@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/*  */
+#body {
+    width: 100vw;
+    background-color: darkgray;
+}
+
+.ContainerPage {
+    width: 80%;
+    height: 176vh;
+    margin: 0 auto;
+    background-color: black;
+}
+
+/*  */
+
+
+
+
+/*  */
+.navbar {
+    width: 100%;
+    font-family: 'Rubik Broken Fax', system-ui;
+    text-align: center;
+    font-size: 1.5rem;
+    position: fixed;
+    color: #8f964b;
+}
+
+
+.ZivShabi {
+    width: 50px;
+    height: 50px;
+    border: radius 50px;
+}
+
+.NavText {
+    color: rgb(67, 90, 91);
+    font-family: 'Rubik Broken Fax',
+        system-ui;
+    display: flex;
+    gap: 30px;
+}
+
+/*  */
+
+
+
+
+
+
+
+
+/*  */
+article {
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.ContainerButtons {
+    width: 80vw;
+    height: 4vw;
+    padding: 6px;
+    display: flex;
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+}
+
+.music {
+    width: 20%;
+}
+
+.DivTitle {
+    width: 60vw;
+    margin: 0 auto;
+    position: relative;
+    margin: 4em 0;
+    text-align: right;
+}
+
+.DivButton {
+    width: 60vw;
+    text-align: right;
+}
+
+.DivButton>button {
+    width: 18vw;
+    height: 3vw;
+    font-size: 0.8rem;
+    color: white;
+    background-color: darkcyan;
+}
+
+/*  */
+
+
+
+
+
+
+
+/*  */
+.text h1 {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: darkcyan;
+}
+
+.text h1:hover {
+    color: white;
+}
+
+.text p {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+    color: darkcyan;
+}
+
+
+button>a {
+    font-size: medium;
+    color: white;
+    font-family: 'Rubik Broken Fax',
+        system-ui;
+    font-size: 1.2rem;
+}
+
+/*  */
+
+
+
+
+
+
+/*  */
+aside {
+    width: 80vw;
+    height: 15vh;
+    position: relative;
+    margin: 1em 0;
+    background-color: white;
+    text-align: center;
+    background-color: darkgray;
+}
+
+aside img {
+    position: relative;
+    margin: 2em 5em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+/*  */
+
+
+
+
+
+
+/*  */
+section {
+    text-align: center;
+    width: 80vw;
+    height: 80vh;
+    padding: 50px;
+    position: relative;
+    margin: 4em 0;
+    background-color: #faf9f8;
+}
+
+img[ src="./img/מכאן ניתן להגיעה אלינו.png"],
+[src="./img/עותק של coffee.png"],
+[src="./img/מתי לאחרונה טסתם לטיול בחול .png"],
+[src="./img/אנחנו מזמינים אותכם לתערוכה שלנו .png"],
+[src="./img/גם לכם מגיע להתחדש בטלפון חדש.png"],
+[src="./img/עותק של שרותי אחריות אצלנו הם לשלוש שנים.png"],
+[src="./img/עותק של לחשוב מחוץ לקופסה.png"] {
+    width: 80vw;
+    padding: 80px 200px;
+    margin: 0 auto;
+}
+
+
+/*  */
+
+
+
+
+
+/*  */
+footer {
+    width: 80vw;
+    height: 3.5vh;
+    background-color: darkcyan;
+    border-bottom: 3px solid black;
+}
+
+
+span>p1 {
+    font: 1.4rem 'Rubik Vinyl',
+        system-ui;
+    font-weight: bold;
+    color: black;
+    margin-left: 30px;
+}
+
+span>p2 {
+    font: 1.4rem 'Rubik Vinyl',
+        system-ui;
+    color: black;
+    margin-left: 51vw;
+}
+
+/*  */
+@media screen and (max-width:576px) {
+    .ContainerPage {
+        width: 80vw;
+        height: 136vh;
+        margin: 0 auto;
+    }
+
+    .NavText {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .container-fluid {
+        display: flex;
+    }
+
+    /*  */
+    .DivButton>button {
+        width: 62vw;
+        height: 16vw;
+        font-size: 0.8rem;
+        color: white;
+        background-color: darkcyan;
+    }
+
+    .DivButton {
+        width: 60vw;
+        text-align: right;
+        position: relative;
+        margin-top: -3em;
+    }
+
+    .music {
+        display: none;
+    }
+
+    .text h1 {
+        font-size: medium;
+    }
+
+
+
+    aside {
+        width: 80vw;
+        height: 15vh;
+        position: relative;
+        margin: 1em 0;
+        background-color: white;
+        text-align: center;
+        background-color: darkgray;
+        display: flex;
+    }
+
+    aside img {
+        position: relative;
+        margin: 2em 1.5em;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+    }
+
+
+
+
+    /*  */
+
+    section {
+        text-align: center;
+        width: 80%;
+        height: 40vh;
+        background-color: #faf9f8;
+        margin: 0 auto;
+    }
+
+    img[ src="./img/מכאן ניתן להגיעה אלינו.png"],
+    img[src="./img/עותק של coffee.png"],
+    [src="./img/מתי לאחרונה טסתם לטיול בחול .png"],
+    [src="./img/אנחנו מזמינים אותכם לתערוכה שלנו .png"],
+    [src="./img/גם לכם מגיע להתחדש בטלפון חדש.png"],
+    [src="./img/עותק של שרותי אחריות אצלנו הם לשלוש שנים.png"],
+    [src="./img/עותק של לחשוב מחוץ לקופסה.png"] {
+        width: 80vw;
+        padding: 30px 30px;
+        margin-left: -70px;
+    }
+
+    span>p1 {
+        font: 0.8rem 'Rubik Vinyl',
+            system-ui;
+        color: black;
+        margin-left: 20px;
+    }
+
+    span>p2 {
+        font: 0.8rem 'Rubik Vinyl',
+            system-ui;
+        color: black;
+        margin-left: 20px;
+    }
+
+
+}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:992px) {}
+
+@media screen and (max-width:1200px) {}
+
+@media screen and (max-width: 1400px) {}

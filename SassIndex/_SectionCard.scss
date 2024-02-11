@@ -40,7 +40,7 @@
 
    .CardButton {
        width: 100px;
-       height: 20px;
+       height: 30px;
        background-color: darkcyan;
        border-radius: 8px;
        border: 1px solid black;
@@ -87,7 +87,7 @@
    }
 
    .card6 {
-       background-image: url(../ImgIndex/עותק\ של\ שרותי\ אחריות\ אצלנו\ הם\ לשלוש\ שנים.png);
+       background-image: url(../ImgIndex/עותק\ של\ שרותי\ אחריות\ אצלנו\ הם\ לשלוש\ שנים\ 2.png);
        height: 40%;
        border-radius: 15px 15px 0 0;
        background-position: fill;
@@ -95,7 +95,11 @@
    }
 
    .card7 {
-       background-image: url();
+       background-image: url(../ImgIndex/לחשוב\ מחוץ\ לקופסה.png);
+       height: 40%;
+       border-radius: 15px 15px 0 0;
+       background-position: fill;
+       background-size: cover;
    }
 
    .text h3 {
