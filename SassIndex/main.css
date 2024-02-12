@@ -486,7 +486,7 @@ article {
   .card1 {
     background-image: url(../ImgIndex/מתי\ לאחרונה\ טסתם\ לטיול\ בחול\ .png);
     height: 40%;
-    width: 180px;
+    width: 100%;
     background-position: fill;
     background-size: cover;
     border-radius: 15px 15px 0 0;
@@ -494,7 +494,7 @@ article {
   .card2 {
     background-image: url(../ImgIndex/אנחנו\ מזמינים\ אותכם\ לתערוכה\ שלנו\ .png);
     height: 40%;
-    width: 180px;
+    width: 100%;
     border-radius: 15px 15px 0 0;
     background-position: fill;
     background-size: cover;
@@ -502,7 +502,7 @@ article {
   .card3 {
     background-image: url(../ImgIndex/coffee.png);
     height: 40%;
-    width: 180px;
+    width: 100%;
     border-radius: 15px 15px 0 0;
     background-position: fill;
     background-size: cover;
@@ -510,7 +510,7 @@ article {
   .card4 {
     background-image: url(../ImgIndex/גם\ לכם\ מגיע\ להתחדש\ בטלפון\ חדש.png);
     height: 40%;
-    width: 180px;
+    width: 100%;
     border-radius: 15px 15px 0 0;
     background-position: fill;
     background-size: cover;
@@ -518,7 +518,7 @@ article {
   .card5 {
     background-image: url(../ImgIndex/עותק\ של\ מכאן\ ניתן\ להגיעה\ אלינו.png);
     height: 40%;
-    width: 180px;
+    width: 100%;
     border-radius: 15px 15px 0 0;
     background-position: fill;
     background-size: cover;
@@ -526,7 +526,15 @@ article {
   .card6 {
     background-image: url(../ImgIndex/עותק\ של\ שרותי\ אחריות\ אצלנו\ הם\ לשלוש\ שנים.png);
     height: 40%;
-    width: 180px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    background-position: fill;
+    background-size: cover;
+  }
+  .card7 {
+    background-image: url(../ImgIndex/לחשוב\ מחוץ\ לקופסה.png);
+    height: 40%;
+    width: 100%;
     border-radius: 15px 15px 0 0;
     background-position: fill;
     background-size: cover;
@@ -563,13 +571,12 @@ article {
     font-size: 1rem;
   }
   .ContainerAside {
+    width: 10%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     display: flex;
     flex-wrap: wrap;
-    flex-wrap: wrap;
-    width: 50px;
   }
   .img_aside {
     width: 15vw;
@@ -676,8 +683,8 @@ input[type=submit] {
 }
 
 .ContainerAside {
-  width: 80vw;
-  height: 20vh;
+  width: 80%;
+  height: 13vh;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 1fr);
