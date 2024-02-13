@@ -19,7 +19,7 @@
         flex-direction: column;
     }
 
-    #navbar-links {
+    #navBarLinks {
         display: none;
     }
 
@@ -34,17 +34,14 @@
     .links {
         flex-direction: column;
         display: flex;
-
+        margin-top: 200px;
     }
 
-    input[type="checkbox"]:checked~.NavBarLinks {
+    input[type="checkbox"]:checked~#navBarLinks {
         display: block;
 
     }
 
-    .NavBarLinks>nav>a {
-        display: block;
-    }
 
 
     // 
