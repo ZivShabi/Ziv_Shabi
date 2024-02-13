@@ -1,10 +1,3 @@
-@media screen and (max-width:576px) {
-    .DropdownMenu {
-        left: 2re;
-        width: unset;
-    }
-}
-
 //  screen and
 
 @media (max-width:992px) {
@@ -40,12 +33,18 @@
 
     .links {
         flex-direction: column;
+        display: flex;
+
     }
 
     input[type="checkbox"]:checked~.NavBarLinks {
         display: block;
+
     }
 
+    .NavBarLinks>nav>a {
+        display: block;
+    }
 
 
     // 

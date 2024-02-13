@@ -361,12 +361,6 @@ article {
   margin: 1em;
 }
 
-@media screen and (max-width: 576px) {
-  .DropdownMenu {
-    left: 2re;
-    width: unset;
-  }
-}
 @media (max-width: 992px) {
   #container {
     width: 100vw;
@@ -388,8 +382,12 @@ article {
   }
   .links {
     flex-direction: column;
+    display: flex;
   }
   input[type=checkbox]:checked ~ .NavBarLinks {
+    display: block;
+  }
+  .NavBarLinks > nav > a {
     display: block;
   }
   header {
