@@ -317,9 +317,9 @@ span>p2 {
     [src="./img/גם לכם מגיע להתחדש בטלפון חדש.png"],
     [src="./img/עותק של שרותי אחריות אצלנו הם לשלוש שנים.png"],
     [src="./img/עותק של לחשוב מחוץ לקופסה.png"] {
-        width: 80%;
-        position: relative;
-        margin: 5em 0;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
     }
 
     span>p1 {
