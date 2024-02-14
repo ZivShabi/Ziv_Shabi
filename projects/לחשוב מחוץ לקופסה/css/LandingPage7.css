@@ -216,10 +216,18 @@
          display: none;
      }
 
+     img[title~="thGroup"] {
+         background-repeat: no-repeat;
+         width: 20vw;
+         height: 20vh;
+         margin-top: 120px;
+     }
+
      .containerItem {
          width: 100px;
          display: grid;
-         margin: 3em -3em;
+         position: relative;
+         margin: 3em 0;
          grid-template-columns: repeat(1, fr1);
          grid-template-rows: repeat(5, fr1);
          flex-wrap: wrap;
@@ -253,8 +261,8 @@
 
      footer {
          display: flex;
-         position: relative;
-         margin: 60em 0em;
+         margin-top: 210%;
+
      }
 
      .item6 {
@@ -295,7 +303,6 @@
          width: 90%;
          position: relative;
          justify-content: center;
-         margin: 70em 0;
      }
 
      #TextAreaa {

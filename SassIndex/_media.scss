@@ -29,6 +29,7 @@
 
     #hamburger {
         display: block;
+        border-radius: 10px;
     }
 
     .links {
@@ -300,7 +301,7 @@
 
     // 
     .ContainerAside {
-        width: 10%;
+        width: 10px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -309,8 +310,8 @@
     }
 
     .img_aside {
-        width: 15vw;
-        height: 15vw;
+        width: 20px;
+        height: 20px;
     }
 
     .Imgs_simple-whatsapp {
