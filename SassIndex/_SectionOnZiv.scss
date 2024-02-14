@@ -69,16 +69,20 @@
 }
 
 .resumes {
-    width: 20vw;
+    width: 30%;
     height: 3.5vw;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     color: white;
     background-color: black;
     border: white;
+    border: white;
     font-size: 1.2rem;
     font-family: 'Times New Roman', Times, serif;
     box-shadow: 1vw 1vw 2vw black;
+    margin: 0.5em;
+    cursor: pointer;
+    padding: 0.5em;
 }
 
 .resumes:hover {

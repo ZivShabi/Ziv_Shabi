@@ -227,10 +227,12 @@
          width: 100px;
          display: grid;
          position: relative;
-         margin: 3em 0;
+         margin: 3em -1em;
          grid-template-columns: repeat(1, fr1);
          grid-template-rows: repeat(5, fr1);
          flex-wrap: wrap;
+         justify-content: space-around;
+         align-items: center;
      }
 
      .item1 {
@@ -302,8 +304,12 @@
      footer {
          width: 90%;
          position: relative;
-         margin-top: 63em;
+         margin-top: 75em;
          justify-content: center;
+         text-align: center;
+         gap: 3em;
+         margin-left: 2em;
+
      }
 
      #TextAreaa {
