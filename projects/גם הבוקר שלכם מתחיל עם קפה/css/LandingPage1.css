@@ -90,8 +90,8 @@ input[type=submit] {
 
     img {
         width: 100%;
-        height: 100vh;
-        object-fit: cover;
+        height: 50%;
+        object-fit: contain;
         background-position: fill;
         background-size: cover;
     }
