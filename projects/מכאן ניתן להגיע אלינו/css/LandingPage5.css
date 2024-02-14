@@ -97,13 +97,16 @@
 
        section {
            width: 100%;
+           height: 1vh;
            justify-content: center;
            position: relative;
-           margin: 1em 0;
-           height: 20vh;
-           padding: 10px;
+           margin: 5em 5em;
+           padding: 30px 50px;
            text-align: center;
            line-height: 2.5;
+           text-align: right;
+           margin: 0 auto;
+
        }
 
        h1 {
@@ -143,13 +146,14 @@
            flex-direction: column;
            justify-content: center;
            text-align: center;
+           line-height: 3;
        }
 
 
 
        input[type=submit] {
            width: 198%;
-           height: 35px;
+           height: 45px;
            background-color: white;
            color: black;
            font-size: 1.2em;
@@ -161,7 +165,7 @@
 
        input {
            width: 198%;
-           height: 35px;
+           height: 45px;
            border: white;
        }
 

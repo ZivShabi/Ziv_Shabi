@@ -81,19 +81,21 @@ input[type=submit] {
 @media screen and (max-width: 1400px) {
     article {
         width: 100vw;
-        height: 35vh;
+        height: 40%;
         background-image: url(../img/Background_of_the_first_page.png);
         opacity: 1;
     }
 
     #form_container {
-        width: 80vw;
-        height: 60vh;
+        width: 80%;
+        height: 80%;
         background-color: #1A1A1AD4;
         margin: 0 auto;
-        margin-top: -17.5vh;
+        position: relative;
+        margin: -12em 2.5em;
         display: flex;
         flex-direction: column;
+        justify-content: center;
 
     }
 

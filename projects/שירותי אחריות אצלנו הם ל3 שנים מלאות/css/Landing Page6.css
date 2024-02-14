@@ -5,6 +5,11 @@
 }
 
 
+#container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
 header {
     margin-left: 50%;
@@ -12,17 +17,7 @@ header {
     border-top: 10px solid #FDBD03;
     display: flex;
     flex-direction: column;
-
 }
-
-
-
-#container {
-    display: flex;
-    flex-direction: column;
-}
-
-
 
 .Img_Form {
     display: flex;
@@ -119,22 +114,22 @@ input[type=submit] {
 }
 
 .SpanImg {
-    padding: 20px;
+    padding: 10px;
     background-color: #FDBD03;
     border-radius: 50%;
     margin: 2.5em;
 }
 
 .SpanImg>img {
-    width: 4.5vw;
-    height: 4.5vw;
+    width: 40px;
+    height: 40px;
 }
 
 footer {
     text-align: right;
-    margin-left: 0;
+    position: relative;
+    margin: -13.5em 0;
     width: 50%;
-    /* border-bottom: 10px solid #FDBD03; */
 }
 
 @media screen and (max-width: 1400px) {
@@ -250,7 +245,19 @@ footer {
         width: 100%;
         height: 80%;
         border-bottom: 10px solid #FDBD03;
+        gap: 2em;
+        justify-content: center;
     }
 
+    .SpanImg>img {
+        width: 20px;
+        height: 20px;
+    }
 
+    footer {
+        text-align: right;
+        position: relative;
+        margin: -1em 0;
+        width: 50%;
+    }
 }
