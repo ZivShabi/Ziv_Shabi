@@ -16,7 +16,7 @@
         width: 80%;
         height: 40px;
         display: flex;
-        flex-direction: column;
+
     }
 
     #navBarLinks {
@@ -32,9 +32,14 @@
     }
 
     .links {
-        flex-direction: column;
         display: flex;
-        margin-top: 200px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: white;
+        width: 100vw;
+        height: 25%;
+        margin-top: 20em;
+        margin-left: -14em;
     }
 
     input[type="checkbox"]:checked~#navBarLinks {
@@ -47,11 +52,13 @@
     // 
     header {
         width: 80vw;
-        height: 80vh;
+        height: 60vh;
+
     }
 
     .ContainerTitle {
-        padding: 60px 60px;
+        position: relative;
+        margin: 3em 3em;
     }
 
     .text h1 {
