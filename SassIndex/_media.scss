@@ -301,7 +301,7 @@
 
     // 
     .ContainerAside {
-        width: 10px;
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);

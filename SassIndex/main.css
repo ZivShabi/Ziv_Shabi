@@ -574,7 +574,7 @@ article {
     font-size: 1rem;
   }
   .ContainerAside {
-    width: 10px;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -687,7 +687,7 @@ input[type=submit] {
 
 .ContainerAside {
   width: 80%;
-  height: 120px;
+  height: 100px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 1fr);
